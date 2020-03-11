@@ -48,7 +48,7 @@ async fn main() -> Result<(), reqwest::Error> {
                     let channel_id: String = full_param[1].parse().unwrap();
                     let video = cli.get_video_by_id(channel_id).await?;
                     
-                    println!("{:?}", video["items"][0]);
+                    println!("{}", video);
                 } else {
                     println!("Please, give channel id like this : lastvideo-user=UCdBpdsdmd55444dKy42ExpEw");
                 }
