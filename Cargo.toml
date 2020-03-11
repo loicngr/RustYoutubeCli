@@ -5,3 +5,11 @@ authors = ["loicngr <pro.nogierloic@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+reqwest = "0.10"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "0.2", features = ["macros"] }
+dotenv = "0.15"
+
+[profile.release]
+debug = true
